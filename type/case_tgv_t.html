@@ -1,0 +1,1912 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="x3d2 is the current codename for what is to become Xcompact3d version 2.0.">
+    <meta name="author" content="Xcompact3d Team" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>case_tgv_t &ndash; x3d2 </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">x3d2 </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/absint.html">Abstract Interfaces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/namelists.html">Namelists</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../program/xcompact.html">Program</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>case_tgv_t
+      <small>Derived Type</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                 title="<p> 1.7% of total for derived types.</p>Including implementation: 178 statements,  2.5% of total for derived types.">11 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/tgv.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/tgv.f90.html'>tgv.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/m_case_tgv.html'>m_case_tgv</a></li>
+            <li class="breadcrumb-item active" aria-current="page">case_tgv_t</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
+  </script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+      <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/case_tgv_t.html#variable-solver~9">solver</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#variable-io_mgr">io_mgr</a>
+        </div>
+      </div>
+    </div>
+
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#cons-0"
+         aria-expanded="false" aria-controls="cons-0">
+         <h4 class="card-header bg-primary text-white">Constructor</h4>
+      </a>
+      <div id="cons-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/case_tgv_t.html#interface-case_tgv_t">case_tgv_t</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#boundprocs-0"
+         aria-expanded="false" aria-controls="boundprocs-0">
+         <h4 class="card-header bg-primary text-white">Type-Bound Procedures</h4>
+      </a>
+      <div id="boundprocs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-case_init">case_init</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-case_finalise">case_finalise</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-set_init">set_init</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-run">run</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-print_enstrophy">print_enstrophy</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-print_div_max_mean">print_div_max_mean</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-boundary_conditions~3">boundary_conditions</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-initial_conditions~3">initial_conditions</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-forcings~3">forcings</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-pre_correction~3">pre_correction</a>
+            <a class="list-group-item" href="../type/case_tgv_t.html#boundprocedure-postprocess~3">postprocess</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+
+
+  </div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+      <h2 id="type-def-statement">
+        type, public, extends(<a href='base_case_t.html'>base_case_t</a>) :: case_tgv_t</h2>
+    
+<br>      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Inherits</h3>
+        </div>
+        <div class="card-body">
+          <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: type~~case_tgv_t~~InheritsGraph Pages: 1 -->
+<svg id="typecase_tgv_tInheritsGraph" width="641pt" height="216pt"
+ viewBox="0.00 0.00 641.00 215.99" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="type~~case_tgv_t~~InheritsGraph" class="graph" transform="scale(0.38 0.38) rotate(0) translate(4 557.05)">
+<title>type~~case_tgv_t~~InheritsGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-557.05 1661,-557.05 1661,4 -4,4"/>
+<!-- type~case_tgv_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node1" class="node">
+<title>type~case_tgv_t</title>
+<polygon fill="none" stroke="black" points="1657,-347.05 1589,-347.05 1589,-323.05 1657,-323.05 1657,-347.05"/>
+<text text-anchor="middle" x="1623" y="-332.65" font-family="Helvetica,sans-Serif" font-size="10.50">case_tgv_t</text>
+</g>
+<!-- type~base_case_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node2" class="node">
+<title>type~base_case_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node2"><a xlink:href="../type/base_case_t.html" xlink:title="base_case_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1552,-347.05 1475,-347.05 1475,-323.05 1552,-323.05 1552,-347.05"/>
+<text text-anchor="middle" x="1513.5" y="-332.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">base_case_t</text>
+</a>
+</g>
+</g>
+<!-- type~case_tgv_t&#45;&gt;type~base_case_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge1" class="edge">
+<title>type~case_tgv_t&#45;&gt;type~base_case_t</title>
+<path fill="none" stroke="#ff0000" d="M1588.87,-335.05C1580.44,-335.05 1571.22,-335.05 1562.22,-335.05"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1562.22,-331.55 1552.22,-335.05 1562.22,-338.55 1562.22,-331.55"/>
+</g>
+<!-- type~io_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node3" class="node">
+<title>type~io_manager_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node3"><a xlink:href="../type/io_manager_t.html" xlink:title="io_manager_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1406,-448.05 1321,-448.05 1321,-424.05 1406,-424.05 1406,-448.05"/>
+<text text-anchor="middle" x="1363.5" y="-433.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">io_manager_t</text>
+</a>
+</g>
+</g>
+<!-- type~base_case_t&#45;&gt;type~io_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge3" class="edge">
+<title>type~base_case_t&#45;&gt;type~io_manager_t</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M1494.65,-347.23C1468.76,-364.9 1420.62,-397.75 1390.7,-418.16"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1388.7,-415.29 1382.42,-423.82 1392.65,-421.08 1388.7,-415.29"/>
+<text text-anchor="middle" x="1440.5" y="-396.45" font-family="Helvetica,sans-Serif" font-size="9.50">io_mgr</text>
+</g>
+<!-- type~solver_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node4" class="node">
+<title>type~solver_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node4"><a xlink:href="../type/solver_t.html" xlink:title="solver_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1390.5,-274.05 1336.5,-274.05 1336.5,-250.05 1390.5,-250.05 1390.5,-274.05"/>
+<text text-anchor="middle" x="1363.5" y="-259.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">solver_t</text>
+</a>
+</g>
+</g>
+<!-- type~base_case_t&#45;&gt;type~solver_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge2" class="edge">
+<title>type~base_case_t&#45;&gt;type~solver_t</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M1488.06,-322.99C1463.53,-310.89 1425.55,-292.16 1398.18,-278.66"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1399.49,-275.4 1388.98,-274.12 1396.4,-281.68 1399.49,-275.4"/>
+<text text-anchor="middle" x="1440.5" y="-309.45" font-family="Helvetica,sans-Serif" font-size="9.50">solver</text>
+</g>
+<!-- type~checkpoint_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node7" class="node">
+<title>type~checkpoint_manager_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node7"><a xlink:href="../type/checkpoint_manager_t.html" xlink:title="checkpoint_manager_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1185,-490.05 1051,-490.05 1051,-466.05 1185,-466.05 1185,-490.05"/>
+<text text-anchor="middle" x="1118" y="-475.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">checkpoint_manager_t</text>
+</a>
+</g>
+</g>
+<!-- type~io_manager_t&#45;&gt;type~checkpoint_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge4" class="edge">
+<title>type~io_manager_t&#45;&gt;type~checkpoint_manager_t</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M1320.98,-446.26C1314.96,-447.61 1308.83,-448.92 1303,-450.05 1267.78,-456.86 1228.51,-463.03 1195.31,-467.83"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1194.62,-464.39 1185.22,-469.28 1195.62,-471.32 1194.62,-464.39"/>
+<text text-anchor="middle" x="1253" y="-468.45" font-family="Helvetica,sans-Serif" font-size="9.50">checkpoint_mgr</text>
+</g>
+<!-- type~snapshot_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node13" class="node">
+<title>type~snapshot_manager_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node13"><a xlink:href="../type/snapshot_manager_t.html" xlink:title="snapshot_manager_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1180,-448.05 1056,-448.05 1056,-424.05 1180,-424.05 1180,-448.05"/>
+<text text-anchor="middle" x="1118" y="-433.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">snapshot_manager_t</text>
+</a>
+</g>
+</g>
+<!-- type~io_manager_t&#45;&gt;type~snapshot_manager_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge5" class="edge">
+<title>type~io_manager_t&#45;&gt;type~snapshot_manager_t</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M1320.92,-436.05C1285.08,-436.05 1232.56,-436.05 1190.06,-436.05"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1190.05,-432.55 1180.05,-436.05 1190.05,-439.55 1190.05,-432.55"/>
+<text text-anchor="middle" x="1253" y="-438.45" font-family="Helvetica,sans-Serif" font-size="9.50">snapshot_mgr</text>
+</g>
+<!-- type~allocator_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node5" class="node">
+<title>type~allocator_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node5"><a xlink:href="../type/allocator_t.html" xlink:title="allocator_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="313.5,-125.05 244.5,-125.05 244.5,-101.05 313.5,-101.05 313.5,-125.05"/>
+<text text-anchor="middle" x="279" y="-110.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">allocator_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~allocator_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge11" class="edge">
+<title>type~solver_t&#45;&gt;type~allocator_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1345.27,-250.01C1324.53,-236.04 1288.2,-213.25 1254,-200.05"/>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1252,-200.05C1230.87,-191.89 1223.02,-196.64 1203,-186.05 1193.79,-181.18 1194.27,-175.79 1185,-171.05 1158.04,-157.24 1148.81,-159.41 1119,-154.05"/>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1117,-154.05C1079.23,-147.25 1070.99,-139.51 1033,-134.05 837.85,-105.99 786.24,-130.04 590,-111.05 514.49,-103.74 496.01,-98.41 421,-87.05 401.64,-84.11 396.95,-77.75 377.5,-80.05"/>
+<text text-anchor="middle" x="811.5" y="-136.45" font-family="Helvetica,sans-Serif" font-size="9.50">host_allocator</text>
+</g>
+<!-- type~base_backend_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node6" class="node">
+<title>type~base_backend_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node6"><a xlink:href="../type/base_backend_t.html" xlink:title="base_backend_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="545.5,-210.05 447.5,-210.05 447.5,-186.05 545.5,-186.05 545.5,-210.05"/>
+<text text-anchor="middle" x="496.5" y="-195.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">base_backend_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~base_backend_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge8" class="edge">
+<title>type~solver_t&#45;&gt;type~base_backend_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1252,-200.05C1124.19,-154.83 709.79,-181.43 555.81,-193.27"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="555.31,-189.8 545.62,-194.06 555.86,-196.77 555.31,-189.8"/>
+<text text-anchor="middle" x="1118" y="-186.45" font-family="Helvetica,sans-Serif" font-size="9.50">backend</text>
+</g>
+<!-- type~dirps_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node8" class="node">
+<title>type~dirps_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node8"><a xlink:href="../type/dirps_t.html" xlink:title="dirps_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1145,-336.05 1091,-336.05 1091,-312.05 1145,-312.05 1145,-336.05"/>
+<text text-anchor="middle" x="1118" y="-321.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dirps_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~dirps_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge12" class="edge">
+<title>type~solver_t&#45;&gt;type~dirps_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1338.07,-274.17C1327.49,-279.03 1314.84,-284.35 1303,-288.05 1252.73,-303.74 1192.51,-313.98 1154.99,-319.38"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="1154.46,-315.93 1145.04,-320.78 1155.43,-322.86 1154.46,-315.93"/>
+<text text-anchor="middle" x="1253" y="-313.45" font-family="Helvetica,sans-Serif" font-size="9.50">xdirps, ydirps, zdirps</text>
+</g>
+<!-- type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node9" class="node">
+<title>type~field_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node9"><a xlink:href="../type/field_t.html" xlink:title="field_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="163,-125.05 109,-125.05 109,-101.05 163,-101.05 163,-125.05"/>
+<text text-anchor="middle" x="136" y="-110.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">field_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge6" class="edge">
+<title>type~solver_t&#45;&gt;type~field_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1117,-154.05C1040.87,-140.41 498.12,-161.15 421,-167.05 357.95,-171.87 342.72,-194.11 280,-186.05"/>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M278,-186.05C232.99,-178.96 187.31,-150.58 160.6,-131.37"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="162.42,-128.37 152.3,-125.25 158.27,-134 162.42,-128.37"/>
+<text text-anchor="middle" x="496.5" y="-169.45" font-family="Helvetica,sans-Serif" font-size="9.50">u, v, w, pressure, pressure_vert</text>
+</g>
+<!-- type~flist_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node10" class="node">
+<title>type~flist_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node10"><a xlink:href="../type/flist_t.html" xlink:title="flist_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="523.5,-35.05 469.5,-35.05 469.5,-11.05 523.5,-11.05 523.5,-35.05"/>
+<text text-anchor="middle" x="496.5" y="-20.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">flist_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~flist_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge7" class="edge">
+<title>type~solver_t&#45;&gt;type~flist_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1360.76,-249.9C1356.17,-222.03 1341.38,-152.69 1303,-111.05 1263.4,-68.08 1240.36,-71.75 1185,-53.05 947.82,27.1 638.27,-3.86 533.76,-17.74"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="533.16,-14.29 523.73,-19.1 534.11,-21.22 533.16,-14.29"/>
+<text text-anchor="middle" x="1118" y="-55.45" font-family="Helvetica,sans-Serif" font-size="9.50">species</text>
+</g>
+<!-- type~ibm_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node11" class="node">
+<title>type~ibm_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node11"><a xlink:href="../type/ibm_t.html" xlink:title="ibm_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1145,-294.05 1091,-294.05 1091,-270.05 1145,-270.05 1145,-294.05"/>
+<text text-anchor="middle" x="1118" y="-279.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ibm_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~ibm_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge14" class="edge">
+<title>type~solver_t&#45;&gt;type~ibm_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1336.44,-264.19C1292.8,-267.77 1204.85,-275 1155.22,-279.07"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="1154.92,-275.58 1145.24,-279.89 1155.49,-282.56 1154.92,-275.58"/>
+<text text-anchor="middle" x="1253" y="-276.45" font-family="Helvetica,sans-Serif" font-size="9.50">ibm</text>
+</g>
+<!-- type~mesh_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node12" class="node">
+<title>type~mesh_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node12"><a xlink:href="../type/mesh_t.html" xlink:title="mesh_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="163,-289.05 109,-289.05 109,-265.05 163,-265.05 163,-289.05"/>
+<text text-anchor="middle" x="136" y="-274.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mesh_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~mesh_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge9" class="edge">
+<title>type~solver_t&#45;&gt;type~mesh_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1354.68,-274.26C1344.61,-288.88 1325.69,-312.92 1303,-325.05 1256.09,-350.12 1238.01,-340.59 1185,-345.05 846.64,-373.52 758.31,-383.99 421,-345.05 357.06,-337.67 344.34,-313.76 280,-312.05"/>
+<text text-anchor="middle" x="496.5" y="-362.45" font-family="Helvetica,sans-Serif" font-size="9.50">mesh</text>
+</g>
+<!-- type~time_intg_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node14" class="node">
+<title>type~time_intg_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node14"><a xlink:href="../type/time_intg_t.html" xlink:title="time_intg_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1153.5,-96.05 1082.5,-96.05 1082.5,-72.05 1153.5,-72.05 1153.5,-96.05"/>
+<text text-anchor="middle" x="1118" y="-81.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_intg_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~time_intg_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge10" class="edge">
+<title>type~solver_t&#45;&gt;type~time_intg_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1356.56,-249.77C1347.29,-231.66 1327.82,-197.58 1303,-176.05 1261.25,-139.83 1202.75,-113.78 1163,-98.84"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="1164.16,-95.54 1153.56,-95.37 1161.74,-102.11 1164.16,-95.54"/>
+<text text-anchor="middle" x="1253" y="-178.45" font-family="Helvetica,sans-Serif" font-size="9.50">time_integrator</text>
+</g>
+<!-- type~vector_calculus_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node15" class="node">
+<title>type~vector_calculus_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node15"><a xlink:href="../type/vector_calculus_t.html" xlink:title="vector_calculus_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="1170,-252.05 1066,-252.05 1066,-228.05 1170,-228.05 1170,-252.05"/>
+<text text-anchor="middle" x="1118" y="-237.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vector_calculus_t</text>
+</a>
+</g>
+</g>
+<!-- type~solver_t&#45;&gt;type~vector_calculus_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge13" class="edge">
+<title>type~solver_t&#45;&gt;type~vector_calculus_t</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M1336.49,-257.65C1326.1,-256.02 1314.01,-254.27 1303,-253.05 1262.3,-248.54 1216.35,-245.29 1180.55,-243.17"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="1180.44,-239.66 1170.26,-242.57 1180.04,-246.64 1180.44,-239.66"/>
+<text text-anchor="middle" x="1253" y="-255.45" font-family="Helvetica,sans-Serif" font-size="9.50">vector_calculus</text>
+</g>
+<!-- type~allocator_t&#45;&gt;type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge15" class="edge">
+<title>type~allocator_t&#45;&gt;type~field_t</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M244.23,-113.05C222.94,-113.05 195.46,-113.05 173.65,-113.05"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="173.45,-109.55 163.45,-113.05 173.45,-116.55 173.45,-109.55"/>
+<text text-anchor="middle" x="194.5" y="-115.45" font-family="Helvetica,sans-Serif" font-size="9.50">first</text>
+</g>
+<!-- type~base_backend_t&#45;&gt;type~allocator_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge17" class="edge">
+<title>type~base_backend_t&#45;&gt;type~allocator_t</title>
+<path fill="none" stroke="#ff8b00" stroke-dasharray="5,2" d="M447.14,-188.52C437.49,-184.73 428.14,-179.44 421,-172.05 402.25,-152.63 424.67,-130.14 403,-114.05 380.7,-97.48 349.31,-97.49 323.82,-101.51"/>
+<polygon fill="#ff8b00" stroke="#ff8b00" points="322.87,-98.13 313.66,-103.37 324.12,-105.01 322.87,-98.13"/>
+<text text-anchor="middle" x="376.5" y="-116.45" font-family="Helvetica,sans-Serif" font-size="9.50">allocator</text>
+</g>
+<!-- type~base_backend_t&#45;&gt;type~mesh_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge16" class="edge">
+<title>type~base_backend_t&#45;&gt;type~mesh_t</title>
+<path fill="none" stroke="#ff8b00" stroke-dasharray="5,2" d="M451.68,-210.14C441.27,-213.87 430.45,-218.5 421,-224.05 411.77,-229.47 412.42,-234.96 403,-240.05 331.3,-278.82 304.43,-265.84 226,-288.05 212.4,-291.9 209.49,-299.03 195.5,-297.05"/>
+<path fill="none" stroke="#ff8b00" stroke-dasharray="5,2" d="M193.5,-297.05C186.69,-295.79 179.61,-293.84 172.85,-291.63"/>
+<polygon fill="#ff8b00" stroke="#ff8b00" points="173.85,-288.28 163.26,-288.28 171.54,-294.88 173.85,-288.28"/>
+<text text-anchor="middle" x="279" y="-290.45" font-family="Helvetica,sans-Serif" font-size="9.50">mesh</text>
+</g>
+<!-- type~poisson_fft_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node21" class="node">
+<title>type~poisson_fft_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node21"><a xlink:href="../type/poisson_fft_t.html" xlink:title="poisson_fft_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="318.5,-238.05 239.5,-238.05 239.5,-214.05 318.5,-214.05 318.5,-238.05"/>
+<text text-anchor="middle" x="279" y="-223.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">poisson_fft_t</text>
+</a>
+</g>
+</g>
+<!-- type~base_backend_t&#45;&gt;type~poisson_fft_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge18" class="edge">
+<title>type~base_backend_t&#45;&gt;type~poisson_fft_t</title>
+<path fill="none" stroke="#ff8b00" stroke-dasharray="5,2" d="M447.2,-192.86C418.66,-190.99 381.96,-190.69 350,-197.05 337.1,-199.61 323.6,-204.6 311.93,-209.72"/>
+<polygon fill="#ff8b00" stroke="#ff8b00" points="310.24,-206.65 302.61,-214.01 313.16,-213.01 310.24,-206.65"/>
+<text text-anchor="middle" x="376.5" y="-199.45" font-family="Helvetica,sans-Serif" font-size="9.50">poisson_fft</text>
+</g>
+<!-- type~checkpoint_config_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node16" class="node">
+<title>type~checkpoint_config_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node16"><a xlink:href="../type/checkpoint_config_t.html" xlink:title="checkpoint_config_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="555.5,-472.05 437.5,-472.05 437.5,-448.05 555.5,-448.05 555.5,-472.05"/>
+<text text-anchor="middle" x="496.5" y="-457.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">checkpoint_config_t</text>
+</a>
+</g>
+</g>
+<!-- type~checkpoint_manager_t&#45;&gt;type~checkpoint_config_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge19" class="edge">
+<title>type~checkpoint_manager_t&#45;&gt;type~checkpoint_config_t</title>
+<path fill="none" stroke="#e7ff00" stroke-dasharray="5,2" d="M1050.97,-475.64C1044.9,-475.43 1038.83,-475.23 1033,-475.05 865.16,-469.7 667.71,-464.43 565.89,-461.79"/>
+<polygon fill="#e7ff00" stroke="#e7ff00" points="565.83,-458.29 555.75,-461.53 565.65,-465.29 565.83,-458.29"/>
+<text text-anchor="middle" x="811.5" y="-477.45" font-family="Helvetica,sans-Serif" font-size="9.50">config</text>
+</g>
+<!-- type~field_buffer_map_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node17" class="node">
+<title>type~field_buffer_map_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node17"><a xlink:href="../type/field_buffer_map_t.html" xlink:title="field_buffer_map_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="552.5,-535.05 440.5,-535.05 440.5,-511.05 552.5,-511.05 552.5,-535.05"/>
+<text text-anchor="middle" x="496.5" y="-520.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">field_buffer_map_t</text>
+</a>
+</g>
+</g>
+<!-- type~checkpoint_manager_t&#45;&gt;type~field_buffer_map_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge20" class="edge">
+<title>type~checkpoint_manager_t&#45;&gt;type~field_buffer_map_t</title>
+<path fill="none" stroke="#e7ff00" stroke-dasharray="5,2" d="M1097.86,-490.14C1081.39,-499.8 1056.61,-512.6 1033,-518.05 867.25,-556.31 664.89,-542.43 562.91,-531.4"/>
+<polygon fill="#e7ff00" stroke="#e7ff00" points="563.09,-527.9 552.77,-530.28 562.32,-534.86 563.09,-527.9"/>
+<text text-anchor="middle" x="811.5" y="-545.45" font-family="Helvetica,sans-Serif" font-size="9.50">field_buffers</text>
+</g>
+<!-- type~tdsops_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node22" class="node">
+<title>type~tdsops_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node22"><a xlink:href="../type/tdsops_t.html" xlink:title="tdsops_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="524.5,-336.05 468.5,-336.05 468.5,-312.05 524.5,-312.05 524.5,-336.05"/>
+<text text-anchor="middle" x="496.5" y="-321.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">tdsops_t</text>
+</a>
+</g>
+</g>
+<!-- type~dirps_t&#45;&gt;type~tdsops_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge21" class="edge">
+<title>type~dirps_t&#45;&gt;type~tdsops_t</title>
+<path fill="none" stroke="#5cff00" stroke-dasharray="5,2" d="M1090.78,-324.05C992.96,-324.05 649.15,-324.05 534.8,-324.05"/>
+<polygon fill="#5cff00" stroke="#5cff00" points="534.78,-320.55 524.78,-324.05 534.78,-327.55 534.78,-320.55"/>
+<text text-anchor="middle" x="811.5" y="-326.45" font-family="Helvetica,sans-Serif" font-size="9.50">der1st, der1st_sym, der2nd, der2nd_sym, stagder_v2p, stagder_p2v, interpl_v2p, interpl_p2v</text>
+</g>
+<!-- type~field_t&#45;&gt;type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge22" class="edge">
+<title>type~field_t&#45;&gt;type~field_t</title>
+<path fill="none" stroke="#00ff2e" stroke-dasharray="5,2" d="M144.93,-125.06C148.05,-134.02 145.07,-143.05 136,-143.05 130.47,-143.05 127.21,-139.69 126.21,-135.05"/>
+<polygon fill="#00ff2e" stroke="#00ff2e" points="129.7,-135.33 127.07,-125.06 122.72,-134.72 129.7,-135.33"/>
+<text text-anchor="middle" x="136" y="-145.45" font-family="Helvetica,sans-Serif" font-size="9.50">next</text>
+</g>
+<!-- type~flist_t&#45;&gt;type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge23" class="edge">
+<title>type~flist_t&#45;&gt;type~field_t</title>
+<path fill="none" stroke="#00ffb9" stroke-dasharray="5,2" d="M469.23,-27.72C420.72,-36.57 314.04,-57.17 226,-82.05 208.27,-87.06 188.91,-93.66 172.79,-99.48"/>
+<polygon fill="#00ffb9" stroke="#00ffb9" points="171.41,-96.26 163.22,-102.99 173.81,-102.84 171.41,-96.26"/>
+<text text-anchor="middle" x="279" y="-84.45" font-family="Helvetica,sans-Serif" font-size="9.50">ptr</text>
+</g>
+<!-- type~ibm_t&#45;&gt;type~allocator_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge26" class="edge">
+<title>type~ibm_t&#45;&gt;type~allocator_t</title>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M1090.93,-282.81C1038.29,-284.21 915.55,-286.82 812.5,-284.05"/>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M810.5,-284.05C712.34,-281.41 684.23,-297.68 590,-270.05 581.22,-267.47 580.48,-263.49 572,-260.05 507.58,-233.86 475.86,-261.78 421,-219.05 408.13,-209.02 414.37,-198.75 403,-187.05 378.72,-162.05 344.27,-142.28 318,-129.49"/>
+<polygon fill="#00b9ff" stroke="#00b9ff" points="319.26,-126.21 308.73,-125.1 316.27,-132.54 319.26,-126.21"/>
+<text text-anchor="middle" x="496.5" y="-262.45" font-family="Helvetica,sans-Serif" font-size="9.50">host_allocator</text>
+</g>
+<!-- type~ibm_t&#45;&gt;type~base_backend_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge24" class="edge">
+<title>type~ibm_t&#45;&gt;type~base_backend_t</title>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M1090.81,-273.71C1074.38,-268.85 1052.66,-263.1 1033,-260.05 935.59,-244.93 682.98,-269.8 590,-237.05 580.69,-233.77 580.75,-228.61 572,-224.05 564.58,-220.18 556.46,-216.67 548.39,-213.58"/>
+<polygon fill="#00b9ff" stroke="#00b9ff" points="549.59,-210.29 538.99,-210.15 547.18,-216.87 549.59,-210.29"/>
+<text text-anchor="middle" x="811.5" y="-262.45" font-family="Helvetica,sans-Serif" font-size="9.50">backend</text>
+</g>
+<!-- type~ibm_t&#45;&gt;type~field_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge27" class="edge">
+<title>type~ibm_t&#45;&gt;type~field_t</title>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M810.5,-284.05C671.41,-281.85 635.85,-298.58 497.5,-284.05"/>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M495.5,-284.05C461.99,-280.53 451.92,-283.42 421,-270.05 354.05,-241.09 352.85,-189.77 280,-186.05"/>
+<text text-anchor="middle" x="376.5" y="-262.45" font-family="Helvetica,sans-Serif" font-size="9.50">ep1</text>
+</g>
+<!-- type~ibm_t&#45;&gt;type~mesh_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge25" class="edge">
+<title>type~ibm_t&#45;&gt;type~mesh_t</title>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M495.5,-284.05C431.18,-277.16 412.39,-270.96 350,-288.05 341.17,-290.46 340.48,-294.61 332,-298.05 309.82,-307.04 303.93,-312.62 280,-312.05"/>
+<path fill="none" stroke="#00b9ff" stroke-dasharray="5,2" d="M278,-312.05C240.75,-311.06 232.15,-303.81 195.5,-297.05"/>
+<text text-anchor="middle" x="376.5" y="-290.45" font-family="Helvetica,sans-Serif" font-size="9.50">mesh</text>
+</g>
+<!-- type~geo_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node18" class="node">
+<title>type~geo_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node18"><a xlink:href="../type/geo_t.html" xlink:title="geo_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="54,-331.05 0,-331.05 0,-307.05 54,-307.05 54,-331.05"/>
+<text text-anchor="middle" x="27" y="-316.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">geo_t</text>
+</a>
+</g>
+</g>
+<!-- type~mesh_t&#45;&gt;type~geo_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge28" class="edge">
+<title>type~mesh_t&#45;&gt;type~geo_t</title>
+<path fill="none" stroke="#002eff" stroke-dasharray="5,2" d="M108.82,-287.32C95.22,-292.66 78.4,-299.26 63.63,-305.06"/>
+<polygon fill="#002eff" stroke="#002eff" points="62.31,-301.82 54.28,-308.73 64.86,-308.34 62.31,-301.82"/>
+<text text-anchor="middle" x="81.5" y="-302.45" font-family="Helvetica,sans-Serif" font-size="9.50">geo</text>
+</g>
+<!-- type~grid_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node19" class="node">
+<title>type~grid_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node19"><a xlink:href="../type/grid_t.html" xlink:title="grid_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="54,-289.05 0,-289.05 0,-265.05 54,-265.05 54,-289.05"/>
+<text text-anchor="middle" x="27" y="-274.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">grid_t</text>
+</a>
+</g>
+</g>
+<!-- type~mesh_t&#45;&gt;type~grid_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge29" class="edge">
+<title>type~mesh_t&#45;&gt;type~grid_t</title>
+<path fill="none" stroke="#002eff" stroke-dasharray="5,2" d="M108.82,-277.05C95.48,-277.05 79.04,-277.05 64.48,-277.05"/>
+<polygon fill="#002eff" stroke="#002eff" points="64.28,-273.55 54.28,-277.05 64.28,-280.55 64.28,-273.55"/>
+<text text-anchor="middle" x="81.5" y="-279.45" font-family="Helvetica,sans-Serif" font-size="9.50">grid</text>
+</g>
+<!-- type~par_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node20" class="node">
+<title>type~par_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node20"><a xlink:href="../type/par_t.html" xlink:title="par_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="54,-247.05 0,-247.05 0,-223.05 54,-223.05 54,-247.05"/>
+<text text-anchor="middle" x="27" y="-232.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">par_t</text>
+</a>
+</g>
+</g>
+<!-- type~mesh_t&#45;&gt;type~par_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge30" class="edge">
+<title>type~mesh_t&#45;&gt;type~par_t</title>
+<path fill="none" stroke="#002eff" stroke-dasharray="5,2" d="M108.82,-266.77C95.22,-261.43 78.4,-254.83 63.63,-249.03"/>
+<polygon fill="#002eff" stroke="#002eff" points="64.86,-245.76 54.28,-245.36 62.31,-252.27 64.86,-245.76"/>
+<text text-anchor="middle" x="81.5" y="-260.45" font-family="Helvetica,sans-Serif" font-size="9.50">par</text>
+</g>
+<!-- type~snapshot_manager_t&#45;&gt;type~checkpoint_config_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge31" class="edge">
+<title>type~snapshot_manager_t&#45;&gt;type~checkpoint_config_t</title>
+<path fill="none" stroke="#5c00ff" stroke-dasharray="5,2" d="M1055.64,-435.33C957.24,-434.67 758.13,-435.26 590,-448.05 582.08,-448.65 573.8,-449.46 565.58,-450.38"/>
+<polygon fill="#5c00ff" stroke="#5c00ff" points="565.15,-446.91 555.63,-451.55 565.97,-453.86 565.15,-446.91"/>
+<text text-anchor="middle" x="811.5" y="-450.45" font-family="Helvetica,sans-Serif" font-size="9.50">config</text>
+</g>
+<!-- type~snapshot_manager_t&#45;&gt;type~field_buffer_map_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge32" class="edge">
+<title>type~snapshot_manager_t&#45;&gt;type~field_buffer_map_t</title>
+<path fill="none" stroke="#5c00ff" stroke-dasharray="5,2" d="M1066.16,-448.16C1060.77,-450.6 1055.58,-453.54 1051,-457.05 1039.26,-466.04 1045.81,-477.64 1033,-485.05 990.34,-509.73 638.98,-501.61 590,-507.05 581.08,-508.04 571.71,-509.34 562.51,-510.78"/>
+<polygon fill="#5c00ff" stroke="#5c00ff" points="561.93,-507.33 552.61,-512.38 563.05,-514.24 561.93,-507.33"/>
+<text text-anchor="middle" x="811.5" y="-509.45" font-family="Helvetica,sans-Serif" font-size="9.50">field_buffers</text>
+</g>
+<!-- type~writer_session_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node23" class="node">
+<title>type~writer_session_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node23"><a xlink:href="../type/writer_session_t.html" xlink:title="writer_session_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="545,-424.05 448,-424.05 448,-400.05 545,-400.05 545,-424.05"/>
+<text text-anchor="middle" x="496.5" y="-409.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">writer_session_t</text>
+</a>
+</g>
+</g>
+<!-- type~snapshot_manager_t&#45;&gt;type~writer_session_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge33" class="edge">
+<title>type~snapshot_manager_t&#45;&gt;type~writer_session_t</title>
+<path fill="none" stroke="#5c00ff" stroke-dasharray="5,2" d="M1056.14,-424C1048.38,-422.81 1040.52,-421.78 1033,-421.05 859.82,-404.24 653.69,-407.19 555.32,-410"/>
+<polygon fill="#5c00ff" stroke="#5c00ff" points="555.18,-406.5 545.28,-410.3 555.38,-413.5 555.18,-406.5"/>
+<text text-anchor="middle" x="811.5" y="-423.45" font-family="Helvetica,sans-Serif" font-size="9.50">snapshot_writer</text>
+</g>
+<!-- type~time_intg_t&#45;&gt;type~allocator_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge36" class="edge">
+<title>type~time_intg_t&#45;&gt;type~allocator_t</title>
+<path fill="none" stroke="#e700ff" stroke-dasharray="5,2" d="M1082.17,-80.74C975.96,-71.33 647.03,-47.11 377.5,-80.05"/>
+<path fill="none" stroke="#e700ff" stroke-dasharray="5,2" d="M375.5,-80.05C354.63,-82.51 332.37,-89.9 314.6,-97.06"/>
+<polygon fill="#e700ff" stroke="#e700ff" points="313.1,-93.89 305.23,-100.98 315.81,-100.35 313.1,-93.89"/>
+<text text-anchor="middle" x="496.5" y="-75.45" font-family="Helvetica,sans-Serif" font-size="9.50">allocator</text>
+</g>
+<!-- type~time_intg_t&#45;&gt;type~base_backend_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge35" class="edge">
+<title>type~time_intg_t&#45;&gt;type~base_backend_t</title>
+<path fill="none" stroke="#e700ff" stroke-dasharray="5,2" d="M1082.18,-82.79C970.78,-79.1 628.16,-70.35 590,-101.05 564.63,-121.45 593.99,-148.04 572,-172.05 567.27,-177.2 561.47,-181.34 555.21,-184.65"/>
+<polygon fill="#e700ff" stroke="#e700ff" points="553.42,-181.62 545.77,-188.95 556.32,-187.99 553.42,-181.62"/>
+<text text-anchor="middle" x="811.5" y="-103.45" font-family="Helvetica,sans-Serif" font-size="9.50">backend</text>
+</g>
+<!-- type~time_intg_t&#45;&gt;type~flist_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge34" class="edge">
+<title>type~time_intg_t&#45;&gt;type~flist_t</title>
+<path fill="none" stroke="#e700ff" stroke-dasharray="5,2" d="M1098.19,-72.02C1081.72,-62.2 1056.77,-49.01 1033,-43.05 938.12,-19.25 637.81,-21.05 533.56,-22.46"/>
+<polygon fill="#e700ff" stroke="#e700ff" points="533.48,-18.96 523.53,-22.6 533.58,-25.96 533.48,-18.96"/>
+<text text-anchor="middle" x="811.5" y="-45.45" font-family="Helvetica,sans-Serif" font-size="9.50">olds</text>
+</g>
+<!-- type~vector_calculus_t&#45;&gt;type~base_backend_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge37" class="edge">
+<title>type~vector_calculus_t&#45;&gt;type~base_backend_t</title>
+<path fill="none" stroke="#ff008b" stroke-dasharray="5,2" d="M1065.58,-231.24C1054.84,-229.64 1043.57,-228.14 1033,-227.05 836.88,-206.83 786.82,-215.54 590,-204.05 578.93,-203.4 567.12,-202.67 555.76,-201.94"/>
+<polygon fill="#ff008b" stroke="#ff008b" points="555.71,-198.43 545.5,-201.28 555.26,-205.42 555.71,-198.43"/>
+<text text-anchor="middle" x="811.5" y="-229.45" font-family="Helvetica,sans-Serif" font-size="9.50">backend</text>
+</g>
+<!-- type~base_config_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node24" class="node">
+<title>type~base_config_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node24"><a xlink:href="../type/base_config_t.html" xlink:title="base_config_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="321.5,-472.05 236.5,-472.05 236.5,-448.05 321.5,-448.05 321.5,-472.05"/>
+<text text-anchor="middle" x="279" y="-457.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">base_config_t</text>
+</a>
+</g>
+</g>
+<!-- type~checkpoint_config_t&#45;&gt;type~base_config_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge38" class="edge">
+<title>type~checkpoint_config_t&#45;&gt;type~base_config_t</title>
+<path fill="none" stroke="#ff0000" d="M437.47,-460.05C404.51,-460.05 363.6,-460.05 331.74,-460.05"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="331.73,-456.55 321.73,-460.05 331.73,-463.55 331.73,-456.55"/>
+</g>
+<!-- type~poisson_fft_t&#45;&gt;type~mesh_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge39" class="edge">
+<title>type~poisson_fft_t&#45;&gt;type~mesh_t</title>
+<path fill="none" stroke="#003fff" stroke-dasharray="5,2" d="M244.58,-238.13C222.97,-245.95 194.87,-256.12 172.8,-264.1"/>
+<polygon fill="#003fff" stroke="#003fff" points="171.34,-260.9 163.13,-267.6 173.73,-267.49 171.34,-260.9"/>
+<text text-anchor="middle" x="194.5" y="-262.45" font-family="Helvetica,sans-Serif" font-size="9.50">mesh</text>
+</g>
+<!-- type~io_session_base_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node25" class="node">
+<title>type~io_session_base_t</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="332,-384.05 226,-384.05 226,-360.05 332,-360.05 332,-384.05"/>
+<text text-anchor="middle" x="279" y="-369.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">io_session_base_t</text>
+</g>
+<!-- type~writer_session_t&#45;&gt;type~io_session_base_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge41" class="edge">
+<title>type~writer_session_t&#45;&gt;type~io_session_base_t</title>
+<path fill="none" stroke="#ff00bf" d="M447.94,-403.22C416.94,-397.46 376.15,-389.89 342.53,-383.65"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="342.82,-380.15 332.34,-381.76 341.54,-387.03 342.82,-380.15"/>
+</g>
+<!-- type~io_writer_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node26" class="node">
+<title>type~io_writer_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node26"><a xlink:href="../type/io_writer_t.html" xlink:title="io_writer_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="312.5,-426.05 245.5,-426.05 245.5,-402.05 312.5,-402.05 312.5,-426.05"/>
+<text text-anchor="middle" x="279" y="-411.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">io_writer_t</text>
+</a>
+</g>
+</g>
+<!-- type~writer_session_t&#45;&gt;type~io_writer_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge40" class="edge">
+<title>type~writer_session_t&#45;&gt;type~io_writer_t</title>
+<path fill="none" stroke="#ff00bf" stroke-dasharray="5,2" d="M447.94,-412.49C410.6,-412.84 359.06,-413.31 322.95,-413.65"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="322.71,-410.15 312.74,-413.74 322.78,-417.15 322.71,-410.15"/>
+<text text-anchor="middle" x="376.5" y="-415.45" font-family="Helvetica,sans-Serif" font-size="9.50">writer</text>
+</g>
+<!-- type~io_file_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_node27" class="node">
+<title>type~io_file_t</title>
+<g id="a_type~~case_tgv_t~~InheritsGraph_node27"><a xlink:href="../type/io_file_t.html" xlink:title="io_file_t">
+<polygon fill="#5cb85c" stroke="#5cb85c" points="163,-384.05 109,-384.05 109,-360.05 163,-360.05 163,-384.05"/>
+<text text-anchor="middle" x="136" y="-369.65" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">io_file_t</text>
+</a>
+</g>
+</g>
+<!-- type~io_session_base_t&#45;&gt;type~io_file_t -->
+<g id="type~~case_tgv_t~~InheritsGraph_edge42" class="edge">
+<title>type~io_session_base_t&#45;&gt;type~io_file_t</title>
+<path fill="none" stroke="#00ff00" stroke-dasharray="5,2" d="M225.9,-372.05C208.39,-372.05 189.26,-372.05 173.25,-372.05"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="173.22,-368.55 163.22,-372.05 173.22,-375.55 173.22,-368.55"/>
+<text text-anchor="middle" x="194.5" y="-374.45" font-family="Helvetica,sans-Serif" font-size="9.50">file</text>
+</g>
+</g>
+</svg>
+</div>                <script>
+                  var pantypecase_tgv_tInheritsGraph = svgPanZoom('#typecase_tgv_tInheritsGraph',
+                    {zoomEnabled: true, controlIconsEnabled: true, fit: true, center: true,}
+                  );
+                </script>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#InheritsGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="InheritsGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="186pt" height="32pt"
+ viewBox="0.00 0.00 185.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 181.5,-28 181.5,4 -4,4"/>
+<!-- Type -->
+<g id="node1" class="node">
+<title>Type</title>
+<polygon fill="#5cb85c" stroke="#5cb85c" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node2" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="177.5,-24 72.5,-24 72.5,0 177.5,0 177.5,-24"/>
+<text text-anchor="middle" x="125" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a derived type to the parent type which it
+extends. Dashed arrows point from a derived type to the other
+types it contains as a components, with a label listing the name(s) of
+said component(s).
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    <br>
+
+    <section>
+    <h2>Components</h2>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-solver~9"></span>
+              class(<a href='solver_t.html'>solver_t</a>),
+            </td>
+              <td>public,</td>
+            <td>
+              allocatable
+            </td>
+            <td>::</td>
+            <td><strong>solver</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-io_mgr"></span>
+              type(<a href='io_manager_t.html'>io_manager_t</a>),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>io_mgr</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    </section>
+    <br>
+    
+      <section>
+        <h2>Constructor</h2>
+            <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-case_tgv_t"></span>
+      <h3>public        interface <a href='../interface/case_tgv_t.html'>case_tgv_t</a> 
+      </h3>
+    </div>
+    <ul class="list-group">
+          <li class="list-group-item">
+                <h3>
+    public  function <a href='../proc/case_tgv_init.html'>case_tgv_init</a>(backend, mesh, host_allocator) result(flow_case)  
+
+    </h3>
+    
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-backend~6"></span>
+              class(<a href='base_backend_t.html'>base_backend_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>backend</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-mesh~9"></span>
+              type(<a href='mesh_t.html'>mesh_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>mesh</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-host_allocator~3"></span>
+              type(<a href='allocator_t.html'>allocator_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>host_allocator</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>type(<a href='case_tgv_t.html'>case_tgv_t</a>)</small>
+    </h4>
+    
+
+          </li>
+    </ul>
+  </div>
+
+      </section>
+      <br>
+
+
+      <section>
+        <h2>Type-Bound Procedures</h2>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-case_init"></span>
+      <h3>
+          procedure, public ::
+  <strong>case_init</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/case_init.html'>case_init</a>(self, backend, mesh, host_allocator)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_backend_t.html'>base_backend_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>backend</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='mesh_t.html'>mesh_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>mesh</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              type(<a href='allocator_t.html'>allocator_t</a>),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              target
+            </td>
+            <td>::</td>
+            <td><strong>host_allocator</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-case_finalise"></span>
+      <h3>
+          procedure, public ::
+  <strong>case_finalise</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/case_finalise.html'>case_finalise</a>(self)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-set_init"></span>
+      <h3>
+          procedure, public ::
+  <strong>set_init</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/set_init.html'>set_init</a>(self, field, field_func)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>field</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+              <small>    <h5>
+    public pure function field_func(coords) result(r)  
+
+    </h5>
+  
+
+  <h6>Arguments</h6>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-coords~2"></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>coords</strong>(3)</td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h6>
+    Return Value
+    <small>real(kind=dp)</small>
+    </h6>
+    
+</small>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-run"></span>
+      <h3>
+          procedure, public ::
+  <strong>run</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/run.html'>run</a>(self)  
+</h3>
+    
+
+  <p>Runs the solver forwards in time from t=t_0 to t=T, performing
+postprocessing/IO and reporting diagnostics.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-print_enstrophy"></span>
+      <h3>
+          procedure, public ::
+  <strong>print_enstrophy</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/print_enstrophy.html'>print_enstrophy</a>(self, u, v, w)  
+</h3>
+    
+
+  <p>Reports the enstrophy</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>u</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>v</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>w</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-print_div_max_mean"></span>
+      <h3>
+          procedure, public ::
+  <strong>print_div_max_mean</strong>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/print_div_max_mean.html'>print_div_max_mean</a>(self, u, v, w)  
+</h3>
+    
+
+  <p>Reports the div(u) at cell centres</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='base_case_t.html'>base_case_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>u</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>v</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>w</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-boundary_conditions~3"></span>
+      <h3>
+          procedure, public ::
+  <strong>boundary_conditions</strong> => <a href='/home/runner/work/x3d2/x3d2/docs/api-docs/proc/boundary_conditions_tgv.html'>boundary_conditions_tgv</a>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/boundary_conditions_tgv.html'>boundary_conditions_tgv</a>(self)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='case_tgv_t.html'>case_tgv_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-initial_conditions~3"></span>
+      <h3>
+          procedure, public ::
+  <strong>initial_conditions</strong> => <a href='/home/runner/work/x3d2/x3d2/docs/api-docs/proc/initial_conditions_tgv.html'>initial_conditions_tgv</a>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/initial_conditions_tgv.html'>initial_conditions_tgv</a>(self)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='case_tgv_t.html'>case_tgv_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-forcings~3"></span>
+      <h3>
+          procedure, public ::
+  <strong>forcings</strong> => <a href='/home/runner/work/x3d2/x3d2/docs/api-docs/proc/forcings_tgv.html'>forcings_tgv</a>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/forcings_tgv.html'>forcings_tgv</a>(self, du, dv, dw, iter)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='case_tgv_t.html'>case_tgv_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>du</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>dv</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>dw</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iter</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-pre_correction~3"></span>
+      <h3>
+          procedure, public ::
+  <strong>pre_correction</strong> => <a href='/home/runner/work/x3d2/x3d2/docs/api-docs/proc/pre_correction_tgv.html'>pre_correction_tgv</a>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/pre_correction_tgv.html'>pre_correction_tgv</a>(self, u, v, w)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='case_tgv_t.html'>case_tgv_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>u</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>v</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='field_t.html'>field_t</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>w</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+          <div class="row">
+              <div class="card mt-3">
+    <div class="card-header codesum">
+      <span class="anchor" id="boundprocedure-postprocess~3"></span>
+      <h3>
+          procedure, public ::
+  <strong>postprocess</strong> => <a href='/home/runner/work/x3d2/x3d2/docs/api-docs/proc/postprocess_tgv.html'>postprocess_tgv</a>
+        
+      </h3>
+    </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    public  subroutine <a href='../proc/postprocess_tgv.html'>postprocess_tgv</a>(self, iter, t)  
+</h3>
+    
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              class(<a href='case_tgv_t.html'>case_tgv_t</a>)
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iter</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              real(kind=dp),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>t</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+          </li>
+      </ul>
+  </div>
+
+          </div>
+      </section>
+
+    
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              x3d2
+ was developed by Xcompact3d Team<br>              &copy; 2026 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
