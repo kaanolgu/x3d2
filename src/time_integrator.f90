@@ -126,12 +126,12 @@ contains
       if (stat /= 0) error stop 'Error reading AB integration order'
       if (init%order >= 5) error stop 'Integration order >4 is not supported'
       init%nstep = init%order
-      init%nstage = 1
+        init%nstage = 1
       init%nolds = init%nstep - 1
       init%step => adams_bashforth
     else if (init%sname(1:2) == 'RK') then
       read (init%sname(3:3), *, iostat=stat) init%order
-      if (stat /= 0) error stop 'Error reading RK integration order'
+        if (stat /= 0) error stop 'Error reading RK integration order'
       if (init%order >= 5) error stop 'Integration order >4 is not supported'
       init%nstep = 1
       init%nstage = init%order
@@ -284,3 +284,12 @@ contains
   end subroutine rotate
 
 end module m_time_integrator
+
+
+
+
+
+
+
+
+
